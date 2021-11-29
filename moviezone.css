@@ -103,6 +103,17 @@ body{
 }
 .no{
     display: flex;
-    height: 40vh;
+    height: 43vh;  
+    overflow-y: hidden;
+}
+html{
+    overflow: scroll;
+    overflow-x: hidden;
     
+}
+::-webkit-scrollbar{
+    width: 5px;
+    background: transparent;
+
+
 }

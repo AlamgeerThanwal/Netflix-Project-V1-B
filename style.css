@@ -96,11 +96,13 @@ body{
     border-radius: 2px;
     padding: 10px 10px 0 0;
 }
+
 .banner .box .Email input::placeholder{
     position: absolute;
     top: 22px;
     left: 10px;
 }
+
 .banner .box .Email{
     display: flex;
     flex-direction: row;
@@ -142,15 +144,17 @@ body{
     z-index: 1;
     background: linear-gradient(to top, black, transparent);
 }
+
 .card-1,
 .card-2,
 .card-3,
 .card-4{
     border-top: 8px solid #111;
     padding: 50px;
-    color: #fff;
+    color: white;
 }
-.card-1{
+
+.card-1, .card-3{
     position: relative;
     display: grid;
     grid-template-columns: 50% 40%;
@@ -158,40 +162,61 @@ body{
     text-align: left;
     padding: 25px 45px 50px;
 }
+
 .desc-1{
     padding-left: 80px;
 }
+
 .style-cards h1{
     font-size: 3rem;
     padding: 1rem;
     padding-left: 0;
-
 }
+
 .style-cards p{
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     line-height: 2rem;
 }
-.card-1 video{
+
+.card-1 .video-1{
     position: relative;
     grid-column: 2/2;
     grid-row: 1/2;
     z-index: -1;
-    width: 100%;
-    margin-left: 10%;
+    margin-left: 12%;
+    width: 77%;
+    max-width: 100%;
+    height: auto;
+    box-sizing: content-box;
 }
+
 .card-1 img{
+    max-width: 100%;
+    height: auto;
     grid-column: 2/2;
     grid-row: 1/2;
 }
-.card-1.video-3{
+
+.card-3 .video-3{
     position: relative;
     grid-column: 2/2;
     grid-row: 1/2;
     z-index: -1;
-    width: 67%;
-    margin-left: 22%;
-    margin-bottom: 40%;
+    width: 62%;
+    margin-left: 18%;
+    margin-bottom: 28%;
+    max-width: 100%;
+    height: auto;
+    box-sizing: content-box;
+
 }
+.card-3 img{
+    max-width: 100%;
+    height: auto;
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
 .card-2, .card-4{
     position: relative;
     display: grid;
@@ -200,26 +225,29 @@ body{
     align-items: center;
     padding: 25px 45px 50px;
 }
-.card-2{
+
+.desc-2 {
     padding-left: 70px;
     margin-left: 5%;
 }
-.card-4{
+
+.desc-4{
     padding-left: 80px;
     margin-left: 5%;
 }
+
 .card-2 img{
     max-width: 100%;
     grid-column: 1/2;
     grid-row: 1/2;
-
 }
+
 .card-4 img{
     max-width: 100%;
     grid-column: 1/2;
     grid-row: 1/2;
-    
 }
+
 .card-2 .downloading{
     position: relative;
     background-color: #000;
@@ -245,6 +273,7 @@ body{
     width: 65px;
     max-width: 100%;
 }
+
 .card-2 .downloading h1{
     font-size: 15px;
     padding-top: 10px;
